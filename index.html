@@ -1,0 +1,695 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>婚纱摄影工作室影楼类企业网站织梦模板</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="/templets/default/style/mycss.css" rel="stylesheet" type="text/css"/>
+<script>
+<!--
+/*第一种形式 第二种形式 更换显示样式*/
+function setTab2(name,cursel,n){
+for(i=1;i<=n;i++){
+  var menu=document.getElementById(name+i);
+  var con=document.getElementById("con_"+name+"_"+i);
+  menu.className=i==cursel?"hover":"";
+  con.style.display=i==cursel?"block":"none";
+}
+}
+//-->
+</script>
+</head>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="/templets/default/js/jquery.tools.min.js" type="text/javascript"></script>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<script language="javascript" type="text/javascript">
+<!--
+$(function(){
+
+$("a[_for]").mouseover(function(){
+
+			$(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+
+			$(this).addClass("thisclass").blur();
+
+			$("#"+$(this).attr("_for")).show();
+
+		});
+
+		$("a[_for=uc_member]").mouseover();
+
+		$("a[_for=flink_1]").mouseover();
+
+	});
+
+	
+
+	function CheckLogin(){
+
+	  var taget_obj = document.getElementById('_userlogin');
+
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+
+	  DedeXHTTP = null;
+
+	}
+
+-->
+
+</script>
+<LINK rel=stylesheet type=text/css href="/images/style.css">
+<LINK rel=stylesheet type=text/css href="/images/sexylightbox.css">
+<SCRIPT type=text/javascript src="/images/jquery.tools.min.js"></SCRIPT>
+<SCRIPT type=text/javascript src="/images/PNG.js"></SCRIPT>
+<SCRIPT type=text/javascript src="/images/loft.js"></SCRIPT>
+<!--[if lte IE 6]>
+<script type="text/javascript" src="theme/common/PNG.js"></script>
+<script>
+PNG.fix('.png');
+</script>
+<![endif]-->
+<SCRIPT type=text/javascript src="/images/jquery.easing.1.3.js"></SCRIPT>
+<SCRIPT type=text/javascript src="/images/sexylightbox.v2.3.jquery.js"></SCRIPT>
+<SCRIPT type=text/javascript>
+  $(document).ready(function(){
+  SexyLightbox.initialize({color:'white', dir: 'theme/bg'});
+ });
+ </SCRIPT>
+</head>
+
+<div class="tb1">
+  <div style="width:966px;margin:0 auto;height:166px">
+    <div style="float:left;width:256px;padding-top:50px"><a href="/"><img src="/templets/default/images/logo.png"></a></div>
+    <div style="float:right;width:710px">
+      <div class="dldh"> <a href="/">>>返回首页</a>&nbsp;&nbsp;&nbsp; <span id="_userlogin" > <a href="/member/index_do.php?fmdo=user&dopost=regnew" target="_blank">>>用户注册</a>&nbsp;&nbsp; <a href="/member/login.php" target="_blank">&nbsp;>>用户登录</a></span> 
+        <script language="javascript" type="text/javascript">CheckLogin();</script> 
+      </div>
+      <div style="width:710px;margin-top:15px;text-align:right">
+        <div  class="flt" style="width:100px"> <span class="dhti"><a href="/about/ms/" target="_blank">品牌</a></span>
+          <ul  class="dhul">
+            
+            <li><a href='/about/ms/' target="_blank" >关于觅尚</a></li>
+            
+            <li><a href='/about/contact/' target="_blank" >联系我们</a></li>
+            
+          </ul>
+        </div>
+        <div  class="flt" style="width:90px"> <span class="dhti"><a href="/service/lc/" target="_blank">服务</a></span>
+          <ul  class="dhul">
+            
+            <li><a href='/service/lc/' target="_blank" >服务流程</a></li>
+            
+            <li><a href='/service/classroom/' target="_blank" >婚照讲堂</a></li>
+            
+            <li><a href='/plus/diy.php?action=post&diyid=1' target="_blank" >网上预约</a></li>
+          </ul>
+        </div>
+        <div  class="flt" style="width:95px"> <span class="dhti"><a href="/news" target="_blank">新闻</a></span>
+          <ul  class="dhul">
+            
+            <li><a href='/news/pomotions/' target="_blank">优惠活动</a></li>
+            
+            <li><a href='/news/trade/' target="_blank">行业新闻</a></li>
+            
+          </ul>
+        </div>
+        <div  class="flt" style="width:115px"> <span class="dhti"><a href="/works/wjhs/" target="_blank">作品</a></span>
+          <ul  class="dhul" style="line-height:16px">
+            
+            <li ><a href='/works/snhs/' target="_blank">室内婚纱作品</a></li>
+            
+            <li ><a href='/works/wjhs/' target="_blank">外景婚纱作品</a></li>
+            
+            <li class=hots><a href='/works/xyczy/' target="_blank">独家主题</a></li>
+            
+            <li ><a href='/works/ssxz/' target="_blank">时尚写真</a></li>
+            
+            <li ><a href='/works/xrfx/' target="_blank">新人分享</a></li>
+            
+          </ul>
+        </div>
+        <div  class="flt" style="width:130px"> <span class="dhti"><a href="/jingdian" target="_blank">景点</a></span>
+          <ul  class="dhul">
+            
+            <li><a href='/jingdian/sqjd/' target="_blank">青岛市区内景点</a></li>
+            
+            <li><a href='/jingdian/tszt/' target="_blank">觅尚特色主题景点</a></li>
+            
+          </ul>
+        </div>
+        
+        
+        <div  class="flt" style="width:90px"> <span class="dhti"><a href="/price" target="_blank">价格</a></span>
+          <ul  class="dhul">
+            
+            <li><a href='/price/photo/' target="_blank">婚纱摄影</a></li>
+            
+            <li><a href='/price/fashion/' target="_blank">个性写真</a></li>
+            
+          </ul>
+        </div>
+        <div  class="flt" style="width:90px"> <span class="dhti"><a href="###">分站</a></span>
+          <ul  class="dhul">
+            <li><a href='http://www.dedecms.com/' target=_blank >积分商城</a></li>
+            <li><a href='javascript:document.location.replace("http://weibo.com/")' target=_blank >官方微薄</a></li>
+            <li><a href='javascript:document.location.replace("http://www.taobao.com/")' target=_blank >淘宝网店</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="banner">
+  <div id="prev"><a ><img src="/templets/default/images/next.png" /></a></div>
+  <div id="next"><a ><img src="/templets/default/images/prev.png" /></a></div>
+  <div class="demo"><a href="" title="" target="_blank"><img src="/uploads/allimg/130516/1-1305161911090-L.jpg" alt="" height=393px /></a></div>
+<div class="demo"><a href="http://www.mishangphoto.com/news/pomotions/2013/0514/351.html" title="" target="_blank"><img src="/uploads/allimg/130523/1-1305232201080-L.jpg" alt="" height=393px /></a></div>
+<div class="demo"><a href="" title="" target="_blank"><img src="/uploads/allimg/130609/1-1306091504210-L.jpg" alt="" height=393px /></a></div>
+
+  <ul class="none1">
+    <li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+
+  </ul>
+  <script type="text/javascript">
+$(document).ready(function(){
+$("#prev").hover(function(){
+$(this).find("a").css("display","block")
+						  },function(){
+$(this).find("a").css("display","none")
+							  });
+$("#next").hover(function(){
+$(this).find("a").css("display","block")
+						  },function(){
+$(this).find("a").css("display","none")
+							  });
+if($("ul.none1 li").size()>0){
+$("ul.none1").tabs(".banner > .demo", {effect: 'fade',loop:true,fadeOutSpeed:1000,fadeInSpeed:1500,rotate: true}).slideshow({autoplay:true,interval: 3000});	
+}
+$("#prev a").click(function(){
+$("ul.none1 li a.current").parent().prev("li").find("a").click();
+});	  
+$("#next a").click(function(){						   
+$("ul.none1 li a.current").parent().next("li").find("a").click();
+});	 
+						   })
+</script> 
+</div>
+   <div class="dhcc1">
+     <div class="dhcc2">
+     	<img src="/uploads/130411/1-130411060505925.jpg" >
+
+     </div>
+     <div class="dhcc3">
+		   <map name="FPMap22">
+			<area href="http://wpa.qq.com/msgrd?v=3&uin=12345678&site=qq&menu=yes" target=_blank shape="rect" coords="9, 16, 96, 65">
+			<area href="http://wpa.qq.com/msgrd?v=3&uin=116717235&site=qq&menu=yes" target=_blank shape="rect" coords="110, 17, 205, 59"></map>
+		   <img src="/templets/default/images/zxkf.jpg" usemap="#FPMap22">
+     </div>
+     <div class="dhcc4"><a href="/plus/diy.php?action=post&diyid=1"><img src="/templets/default/images/zxdd.jpg"></a></div>
+     <div class="dhcc5">地址:青岛市市南区山东路9号深业中心A座9楼-H (山东路巴黎春天购物广场)</div>
+   </div>  
+<script type="text/javascript" src="/templets/default/js/lrtk.js"></script>
+<div style="margin:0 auto;height:315px;width:966px;background:url(/templets/default/images/newsbk.jpg)">
+  <div style="float:left;width:620px">
+    <div>
+      <map name="FPMap2">
+        <area href="/news" shape="rect" coords="547, 14, 615, 38">
+      </map>
+      <img src="/templets/default/images/newss.jpg" usemap="#FPMap2"></div>
+    <div style="width:620px;margin-top:20px">
+      <div style="float:left;width:240px">
+        <div style="position:relative;height:124px;padding-top:8px;padding-left:13px"> <a href="/news/pomotions/2013/0609/889.html"  target="_blank"><img src="/uploads/130609/1-130609150221T7.jpg" width=216px height=100px/></a>
+
+          <div style="position: absolute; left:1px; top:-4px"><img src="/templets/default/images/new.png"></div>
+        </div>
+        <div style="line-height:27px;padding-left:10px"> <span><a href="/news/pomotions/2013/0609/889.html" style="color:#995C2A;font-size:14px" target="_blank">独家外景拍摄基地-薰衣草庄园</a></span><br>
+          <span style="color:#888888"></span><br>
+          <span > ● POST TIME : 2013/06/09</span>
+ </div>
+      </div>
+      <div style="float:right;width:360px">
+        <ul>
+          <li class="inebss"> <span><a href="/news/pomotions/2013/0609/889.html"  target="_blank">独家外景拍摄基地-薰衣草庄园</a></span><br>
+            <span style="color:#888888">POST TIME : 2013/06/09</span> </li>
+<li class="inebss"> <span><a href="/news/pomotions/2013/0514/351.html"  target="_blank">遇见幸福-觅尚摄影蜜月行【免费提供三天两夜蜜月房】</a></span><br>
+            <span style="color:#888888">POST TIME : 2013/05/23</span> </li>
+<li class="inebss"> <span><a href="/news/pomotions/2013/0418/286.html"  target="_blank">2013浩瀚起航【奥帆游艇会】</a></span><br>
+            <span style="color:#888888">POST TIME : 2013/05/16</span> </li>
+<li class="inebss"> <span><a href="/news/trade/2013/0417/253.html"  target="_blank">觅尚摄影:边拍照边旅行</a></span><br>
+            <span style="color:#888888">POST TIME : 2013/04/17</span> </li>
+<li class="inebss"> <span><a href="/news/trade/2013/0417/252.html"  target="_blank">为什么选择觅尚摄影工作室?</a></span><br>
+            <span style="color:#888888">POST TIME : 2013/04/17</span> </li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div style="float:right;width:336px">
+    <div><a href="/news/pomotions/" target="_blank"><img src="/templets/default/images/huodong.jpg"></a></div>
+    <div style="margin-top:10px;padding-left:11px;padding-top:5px">
+      <div class="focus">
+        <ul class="rslides f426x240" >
+          <li><a href="/plus/view.php?aid=374" target=_blank><img src="/uploads/130523/1-130523222024W5.jpg"  width="314px" height="227px"/></a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+function setTab(name,cursel){
+	cursel_0=cursel;
+	for(var i=1; i<=links_len; i++){
+		var menu = document.getElementById(name+i);
+		var menudiv = document.getElementById("con_"+name+"_"+i);
+		if(i==cursel){
+			menu.className="off";
+			menudiv.style.display="block";
+		}
+		else{
+			menu.className="on";
+			menudiv.style.display="none";
+		}
+	}
+}
+function Next(){                                                        
+	cursel_0++;
+	if (cursel_0>links_len)cursel_0=1
+	setTab(name_0,cursel_0);
+} 
+var name_0='one';
+var cursel_0=1;
+var ScrollTime=3000;//循环周期（毫秒）
+var links_len,iIntervalId;
+onload=function(){
+	var links = document.getElementById("tab1").getElementsByTagName('li')
+	links_len=links.length;
+	for(var i=0; i<links_len; i++){
+		links[i].onmouseover=function(){
+			clearInterval(iIntervalId);
+			this.onmouseout=function(){
+				iIntervalId = setInterval(Next,ScrollTime);;
+			}
+		}
+	}
+	document.getElementById("con_"+name_0+"_"+links_len).parentNode.onmouseover=function(){
+		clearInterval(iIntervalId);
+		this.onmouseout=function(){
+			iIntervalId = setInterval(Next,ScrollTime);;
+		}
+	}
+	setTab(name_0,cursel_0);
+	iIntervalId = setInterval(Next,ScrollTime);
+}
+</script>
+<div style="text-align:center"><img src="/templets/default/images/xw.jpg"></div>
+<div  id="tab1" >
+  <div style="margin:0 auto;height:79px;width:966px;background:url(/templets/default/images/zxkp.jpg)">
+    <table border="0" width="966" id="table1" height="79" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="808">　</td>
+        <td width="84" align=right><div class="mmss" style="padding-top:10px">
+            <ul >
+              <li id="one1" onclick="setTab('one',1)"> </li>
+              <li id="one2" onclick="setTab('one',2)"> </li>
+              <li id="one3" onclick="setTab('one',3)"> </li>
+            </ul>
+          </div></td>
+        <td width="74"><a href="/works/wjhs/" style="display:block;width:70px;height:78px;" target="_blank"></a></td>
+      </tr>
+    </table>
+  </div>
+  <div style="margin:0 auto;width:966px;height:375px">
+    <div id="con_one_1" > <div style="float:left;margin-left:6px;margin-right:6px">
+        <div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'"> <a href="/works/wjhs/2013/0414/213.html" target="_blank"><img src="/uploads/allimg/130414/1-1304141246160-L.jpg"  alt="以爱之名" title="以爱之名"  class="imgss" /></a>
+          <div class="btss">
+            <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>2013/05/22</div>
+            <div style="margin-top:5px"><a href="/works/wjhs/2013/0414/213.html" target="_blank">以爱之名</a></div>
+          </div>
+          <div class="lss">以爱之名</div>
+        </div>
+      </div>
+<div style="float:left;margin-left:6px;margin-right:6px">
+        <div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'"> <a href="/works/wjhs/2013/0414/221.html" target="_blank"><img src="/uploads/allimg/130414/1-1304141304520-L.jpg"  alt="漫步" title="漫步"  class="imgss" /></a>
+          <div class="btss">
+            <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>2013/05/22</div>
+            <div style="margin-top:5px"><a href="/works/wjhs/2013/0414/221.html" target="_blank">漫步</a></div>
+          </div>
+          <div class="lss">漫步</div>
+        </div>
+      </div>
+<div style="float:left;margin-left:6px;margin-right:6px">
+        <div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'"> <a href="/works/wjhs/2013/0618/893.html" target="_blank"><img src="/uploads/allimg/130618/1-13061Q006480-L.jpg"  alt="田颖夫妇" title="田颖夫妇"  class="imgss" /></a>
+          <div class="btss">
+            <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>2013/06/18</div>
+            <div style="margin-top:5px"><a href="/works/wjhs/2013/0618/893.html" target="_blank">田颖夫妇</a></div>
+          </div>
+          <div class="lss">田颖夫妇</div>
+        </div>
+      </div>
+<div style="float:left;margin-left:6px;margin-right:6px">
+        <div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'"> <a href="/works/wjhs/2013/0530/879.html" target="_blank"><img src="/uploads/allimg/130530/1-1305301546120-L.jpg"  alt="庄勇夫妇" title="庄勇夫妇"  class="imgss" /></a>
+          <div class="btss">
+            <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>2013/05/30</div>
+            <div style="margin-top:5px"><a href="/works/wjhs/2013/0530/879.html" target="_blank">庄勇夫妇</a></div>
+          </div>
+          <div class="lss">庄勇夫妇</div>
+        </div>
+      </div>
+ </div>
+    <div id="con_one_2" style="display:none" > <div style="float:left;margin-left:6px;margin-right:6px">
+        <div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'"> <a href="/works/wjhs/2013/0529/875.html" target="_blank"><img src="/uploads/allimg/130529/1-1305291015080-L.jpg"  alt="孙倩夫妇" title="孙倩夫妇"  class="imgss" /></a>
+          <div class="btss">
+            <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>2013/05/29</div>
+            <div style="margin-top:5px"><a href="/works/wjhs/2013/0529/875.html" target="_blank">孙倩夫妇</a></div>
+          </div>
+          <div class="lss">孙倩夫妇</div>
+        </div>
+      </div>
+<div style="float:left;margin-left:6px;margin-right:6px">
+        <div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'"> <a href="/works/wjhs/2013/0529/874.html" target="_blank"><img src="/uploads/130529/1-13052910105Y60.jpg"  alt="徐海洋夫妇" title="徐海洋夫妇"  class="imgss" /></a>
+          <div class="btss">
+            <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>2013/05/29</div>
+            <div style="margin-top:5px"><a href="/works/wjhs/2013/0529/874.html" target="_blank">徐海洋夫妇</a></div>
+          </div>
+          <div class="lss">徐海洋夫妇</div>
+        </div>
+      </div>
+<div style="float:left;margin-left:6px;margin-right:6px">
+        <div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'"> <a href="/works/wjhs/2013/0521/448.html" target="_blank"><img src="/uploads/allimg/130521/1-1305211914320-L.jpg"  alt="Love password" title="Love password"  class="imgss" /></a>
+          <div class="btss">
+            <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>2013/05/21</div>
+            <div style="margin-top:5px"><a href="/works/wjhs/2013/0521/448.html" target="_blank">Love password</a></div>
+          </div>
+          <div class="lss">Love password</div>
+        </div>
+      </div>
+<div style="float:left;margin-left:6px;margin-right:6px">
+        <div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'"> <a href="/works/wjhs/2013/0504/315.html" target="_blank"><img src="/uploads/allimg/130504/1-1305041339480-L.jpg"  alt="致.青春" title="致.青春"  class="imgss" /></a>
+          <div class="btss">
+            <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>2013/05/16</div>
+            <div style="margin-top:5px"><a href="/works/wjhs/2013/0504/315.html" target="_blank">致.青春</a></div>
+          </div>
+          <div class="lss">致.青春</div>
+        </div>
+      </div>
+ </div>
+    <div id="con_one_3" style="display:none" > <div style="float:left;margin-left:6px;margin-right:6px">
+        <div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'"> <a href="/works/wjhs/2013/0424/302.html" target="_blank"><img src="/uploads/allimg/130424/1-1304241AT60-L.jpg"  alt="刘俊夫妇-樱花" title="刘俊夫妇-樱花"  class="imgss" /></a>
+          <div class="btss">
+            <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>2013/05/16</div>
+            <div style="margin-top:5px"><a href="/works/wjhs/2013/0424/302.html" target="_blank">刘俊夫妇-樱花</a></div>
+          </div>
+          <div class="lss">刘俊夫妇-樱花</div>
+        </div>
+      </div>
+<div style="float:left;margin-left:6px;margin-right:6px">
+        <div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'"> <a href="/works/wjhs/2013/0514/346.html" target="_blank"><img src="/uploads/allimg/130514/1-1305141253260-L.jpg"  alt="Because of love" title="Because of love"  class="imgss" /></a>
+          <div class="btss">
+            <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>2013/05/14</div>
+            <div style="margin-top:5px"><a href="/works/wjhs/2013/0514/346.html" target="_blank">Because of love</a></div>
+          </div>
+          <div class="lss">Because of love</div>
+        </div>
+      </div>
+<div style="float:left;margin-left:6px;margin-right:6px">
+        <div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'"> <a href="/works/wjhs/2013/0421/294.html" target="_blank"><img src="/uploads/allimg/130421/1-1304211514330-L.jpg"  alt="BLUE" title="BLUE"  class="imgss" /></a>
+          <div class="btss">
+            <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>2013/04/21</div>
+            <div style="margin-top:5px"><a href="/works/wjhs/2013/0421/294.html" target="_blank">BLUE</a></div>
+          </div>
+          <div class="lss">BLUE</div>
+        </div>
+      </div>
+<div style="float:left;margin-left:6px;margin-right:6px">
+        <div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'"> <a href="/works/wjhs/2013/0421/293.html" target="_blank"><img src="/uploads/allimg/130421/1-1304211510230-L.jpg"  alt="花开的声音" title="花开的声音"  class="imgss" /></a>
+          <div class="btss">
+            <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>2013/04/21</div>
+            <div style="margin-top:5px"><a href="/works/wjhs/2013/0421/293.html" target="_blank">花开的声音</a></div>
+          </div>
+          <div class="lss">花开的声音</div>
+        </div>
+      </div>
+ </div>
+  </div>
+</div>
+<div style="text-align:center"><img src="/templets/default/images/xw.jpg"></div>
+<div style="text-align:center"> <a href="/plus/view.php?aid=74" target=_blank><img src="/uploads/130418/1-13041R24243c4.jpg" style="width:966px;height:263px"></a>
+ </div>
+<div style="text-align:center"><img src="/templets/default/images/xw.jpg"></div>
+<div style="margin:0 auto;height:79px;width:966px;background:url(/templets/default/images/tsxl.jpg)">
+  <table border="0" width="966" id="table1" height="79" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="539">&nbsp;</td>
+      <td width="353"></td>
+      <td width="74"><a href="/works/xyczy/" style="display:block;width:70px;height:78px;" target="_blank"></a></td>
+    </tr>
+  </table>
+</div>
+<div style="margin:0 auto;width:966px;height:375px">
+  <ul style="list-style:none">
+    <li style="float:left;margin-left:6px;margin-right:6px">
+      <div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'"> <a href="/works/xyczy/2013/0425/303.html" target="_blank"><img src="/uploads/allimg/130425/1-1304250T2490-L.jpg"  alt="花间的爱情" title="花间的爱情"  class="imgss" /></a>
+        <div class="btss">
+          <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>2013/04/25</div>
+          <div style="margin-top:5px"><a href="/works/xyczy/2013/0425/303.html" target="_blank">花间的爱情</a></div>
+        </div>
+        <div class="lss">花间的爱情</div>
+      </div>
+    </li>
+<li style="float:left;margin-left:6px;margin-right:6px">
+      <div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'"> <a href="/works/xyczy/2013/0414/238.html" target="_blank"><img src="/uploads/allimg/130414/1-1304141R6380-L.jpg"  alt="花漾" title="花漾"  class="imgss" /></a>
+        <div class="btss">
+          <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>2013/04/25</div>
+          <div style="margin-top:5px"><a href="/works/xyczy/2013/0414/238.html" target="_blank">花漾</a></div>
+        </div>
+        <div class="lss">花漾</div>
+      </div>
+    </li>
+<li style="float:left;margin-left:6px;margin-right:6px">
+      <div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'"> <a href="/works/xyczy/2013/0414/234.html" target="_blank"><img src="/uploads/allimg/130414/1-130414133U90-L.jpg"  alt="YOUTH" title="YOUTH"  class="imgss" /></a>
+        <div class="btss">
+          <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>2013/04/17</div>
+          <div style="margin-top:5px"><a href="/works/xyczy/2013/0414/234.html" target="_blank">YOUTH</a></div>
+        </div>
+        <div class="lss">YOUTH</div>
+      </div>
+    </li>
+<li style="float:left;margin-left:6px;margin-right:6px">
+      <div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'"> <a href="/works/xyczy/2013/0414/239.html" target="_blank"><img src="/uploads/allimg/130414/1-1304141RT10-L.jpg"  alt="夏之时-花语" title="夏之时-花语"  class="imgss" /></a>
+        <div class="btss">
+          <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>2013/04/17</div>
+          <div style="margin-top:5px"><a href="/works/xyczy/2013/0414/239.html" target="_blank">夏之时-花语</a></div>
+        </div>
+        <div class="lss">夏之时-花语</div>
+      </div>
+    </li>
+
+  </ul>
+</div>
+<div style="text-align:center"><img src="/templets/default/images/xw.jpg"></div>
+<div style="text-align:center">
+  <map name="FPMap1">
+    <area href="/works/xrfx" shape="rect" coords="901, 29, 965, 59">
+  </map>
+  <img src="/templets/default/images/xrfx.jpg" usemap="#FPMap1" ></div>
+<div style="margin:0 auto;width:966px;height:247px">
+  <ul>
+    <li style="float:left;margin-left:6px;margin-right:6px">
+      <div class='nppxrfx' onmouseover="this.className='nppxrfx2'"  onmouseout="this.className='nppxrfx'"> <a href="/works/xrfx/2013/0608/888.html" target="_blank"><img src="/uploads/allimg/130608/1-13060R010560-L.jpg"  alt="刘焱夫妇" title="刘焱夫妇"  class="imgss" /></a>
+        <div class="btss"> <a href="/works/xrfx/2013/0608/888.html" target="_blank">刘焱夫妇</a><br>
+          <span style="color:#666666"><b>POST TIME : </b>2013/06/08</span> </div>
+      </div>
+    </li>
+<li style="float:left;margin-left:6px;margin-right:6px">
+      <div class='nppxrfx' onmouseover="this.className='nppxrfx2'"  onmouseout="this.className='nppxrfx'"> <a href="/works/xrfx/2013/0608/887.html" target="_blank"><img src="/uploads/allimg/130608/1-13060R00H30-L.jpg"  alt="范奉娇夫妇" title="范奉娇夫妇"  class="imgss" /></a>
+        <div class="btss"> <a href="/works/xrfx/2013/0608/887.html" target="_blank">范奉娇夫妇</a><br>
+          <span style="color:#666666"><b>POST TIME : </b>2013/06/08</span> </div>
+      </div>
+    </li>
+<li style="float:left;margin-left:6px;margin-right:6px">
+      <div class='nppxrfx' onmouseover="this.className='nppxrfx2'"  onmouseout="this.className='nppxrfx'"> <a href="/works/xrfx/2013/0608/886.html" target="_blank"><img src="/uploads/allimg/130608/1-13060R002440-L.jpg"  alt="郑曼曼夫妇" title="郑曼曼夫妇"  class="imgss" /></a>
+        <div class="btss"> <a href="/works/xrfx/2013/0608/886.html" target="_blank">郑曼曼夫妇</a><br>
+          <span style="color:#666666"><b>POST TIME : </b>2013/06/08</span> </div>
+      </div>
+    </li>
+<li style="float:left;margin-left:6px;margin-right:6px">
+      <div class='nppxrfx' onmouseover="this.className='nppxrfx2'"  onmouseout="this.className='nppxrfx'"> <a href="/works/xrfx/2013/0608/885.html" target="_blank"><img src="/uploads/allimg/130608/1-13060Q953550-L.jpg"  alt="李元曦夫妇" title="李元曦夫妇"  class="imgss" /></a>
+        <div class="btss"> <a href="/works/xrfx/2013/0608/885.html" target="_blank">李元曦夫妇</a><br>
+          <span style="color:#666666"><b>POST TIME : </b>2013/06/08</span> </div>
+      </div>
+    </li>
+
+  </ul>
+</div>
+<div style="text-align:center"><img src="/templets/default/images/xw.jpg"></div>
+<div style="text-align:center"> <a href="/plus/view.php?aid=75" target=_blank><img src="/uploads/allimg/130411/1-1304110610230-L.jpg" style="width:966px;height:263px"></a>
+ </div>
+<div style="text-align:center">
+  <map name="FPMap44">
+    <area href="/jingdian/" shape="rect" coords="887, 37, 965, 68">
+  </map>
+  <img src="/templets/default/images/wjd.jpg" usemap="#FPMap44"></div>
+<div style="margin:0 auto;width:966px;height:227px">
+  <ul>
+    <li style="float:left;margin-left:5px;margin-right:5px">
+      <div class='nppiijd' onmouseover="this.className='nppiijd2'"  onmouseout="this.className='nppiijd'"> <a href="/jingdian/tszt/2013/0421/301.html" target="_blank"><img src="/uploads/allimg/130421/1-130421160A00-L.jpg"  alt="薰衣草庄园" title="薰衣草庄园"  style="width:298px;height:185px;padding:5px;border:1px solid #efefef" /></a>
+        <div class="btss"><a href="/jingdian/tszt/2013/0421/301.html" target="_blank">薰衣草庄园</a></div>
+      </div>
+      <div style="color:#888888"><b>POST TIME : </b>2013/04/21</div>
+    </li>
+<li style="float:left;margin-left:5px;margin-right:5px">
+      <div class='nppiijd' onmouseover="this.className='nppiijd2'"  onmouseout="this.className='nppiijd'"> <a href="/jingdian/tszt/2013/0421/300.html" target="_blank"><img src="/uploads/allimg/130421/1-1304211603180-L.jpg"  alt="跑马场" title="跑马场"  style="width:298px;height:185px;padding:5px;border:1px solid #efefef" /></a>
+        <div class="btss"><a href="/jingdian/tszt/2013/0421/300.html" target="_blank">跑马场</a></div>
+      </div>
+      <div style="color:#888888"><b>POST TIME : </b>2013/04/21</div>
+    </li>
+<li style="float:left;margin-left:5px;margin-right:5px">
+      <div class='nppiijd' onmouseover="this.className='nppiijd2'"  onmouseout="this.className='nppiijd'"> <a href="/jingdian/sqjd/2013/0421/299.html" target="_blank"><img src="/uploads/allimg/130421/1-1304211600070-L.jpg"  alt="奥帆中心" title="奥帆中心"  style="width:298px;height:185px;padding:5px;border:1px solid #efefef" /></a>
+        <div class="btss"><a href="/jingdian/sqjd/2013/0421/299.html" target="_blank">奥帆中心</a></div>
+      </div>
+      <div style="color:#888888"><b>POST TIME : </b>2013/04/21</div>
+    </li>
+
+  </ul>
+</div>
+<div style="text-align:center"><img src="/templets/default/images/xw.jpg"></div>
+<div align="center">
+  <table border="0" width="966" cellspacing="0" cellpadding="0" height="231">
+    <tr>
+      <td width="329" valign="top" style="border-right:1px solid #dddddd;padding-right:10px"><div><a href="/tieshi" target="_blank"><img src="/templets/default/images/tieshi.jpg"></a></div>
+        <div>
+          <ul>
+            <li style="padding-left:10px;height:30px;line-height:30px;border-bottom:1px solid #dddddd;text-align:left"><a href="/tieshi/2013/0417/268.html" target="_blank">•&nbsp;&nbsp; 青岛觅尚摄影工作室:根据脸型挑选适合的婚纱款式</a></li>
+<li style="padding-left:10px;height:30px;line-height:30px;border-bottom:1px solid #dddddd;text-align:left"><a href="/tieshi/2013/0417/266.html" target="_blank">•&nbsp;&nbsp; 青岛摄影工作室:怎样做个漂亮新娘</a></li>
+<li style="padding-left:10px;height:30px;line-height:30px;border-bottom:1px solid #dddddd;text-align:left"><a href="/tieshi/2013/0417/264.html" target="_blank">•&nbsp;&nbsp; 青岛觅尚摄影工作室:夏季拍婚纱照的注意点</a></li>
+<li style="padding-left:10px;height:30px;line-height:30px;border-bottom:1px solid #dddddd;text-align:left"><a href="/tieshi/2013/0417/262.html" target="_blank">•&nbsp;&nbsp; 身材娇小的新娘适合什么款式的婚纱</a></li>
+<li style="padding-left:10px;height:30px;line-height:30px;border-bottom:1px solid #dddddd;text-align:left"><a href="/tieshi/2013/0417/261.html" target="_blank">•&nbsp;&nbsp; 青岛婚纱摄影资讯:外景婚纱照的拍摄小窍门</a></li>
+
+          </ul>
+        </div></td>
+      <td width="330" valign="top" style="padding-left:10px"><div><a href="/xuzhi" target="_blank"><img src="/templets/default/images/xuzhi.jpg"></a></div>
+        <div>
+          <ul>
+            <li style="padding-left:10px;height:30px;line-height:30px;border-bottom:1px solid #dddddd;text-align:left"><a href="/xuzhi/2013/0417/275.html" target="_blank">•&nbsp;&nbsp; 青岛婚纱摄影工作室:正确瘦身做完美新娘</a></li>
+<li style="padding-left:10px;height:30px;line-height:30px;border-bottom:1px solid #dddddd;text-align:left"><a href="/xuzhi/2013/0417/273.html" target="_blank">•&nbsp;&nbsp; 青岛婚纱摄影:如何打造清新自然的持久妆容</a></li>
+<li style="padding-left:10px;height:30px;line-height:30px;border-bottom:1px solid #dddddd;text-align:left"><a href="/xuzhi/2013/0417/271.html" target="_blank">•&nbsp;&nbsp; 拍婚纱照怎么摆pose最上镜</a></li>
+<li style="padding-left:10px;height:30px;line-height:30px;border-bottom:1px solid #dddddd;text-align:left"><a href="/xuzhi/2013/0417/270.html" target="_blank">•&nbsp;&nbsp; 青岛婚纱摄影最常见的婚纱照风格</a></li>
+<li style="padding-left:10px;height:30px;line-height:30px;border-bottom:1px solid #dddddd;text-align:left"><a href="/xuzhi/2013/0417/269.html" target="_blank">•&nbsp;&nbsp; 美丽攻略:胖mm适合哪种风格的婚纱摄影</a></li>
+
+          </ul>
+        </div></td>
+      <td width="300" valign="top"><iframe width="300" height="231" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=231&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid=5678907762&verifier=fe26ef74&dpc=1"></iframe></td>
+    </tr>
+  </table>
+</div>
+<div style="text-align:center"><a href="/service/lc/" target="_blank"><img src="/templets/default/images/lc.jpg"></a></div>
+<div>
+  <marquee scrolldelay="2" scrollamount="2">
+  觅尚视觉青岛婚纱摄影工作室是青岛婚纱摄影、青岛外景婚纱摄影顶尖品牌，青岛婚纱摄影哪家好首选觅尚视觉青岛婚纱摄影，青岛摄影工作室专业青岛外景婚纱摄影.我们永远满怀创意与温情,通过一对一的服务为您提供超越您期望的专业的婚纱摄影服务. 青岛婚纱摄影哪家好?就到觅尚视觉青岛婚纱摄影工作室. 我们是专业从事青岛婚纱摄影、青岛外景婚纱摄影的青岛摄影工作室。我们在短短几年里发展成为青岛技术高端，并独具特色的高端品牌摄影工作室。业务也涉及婚纱摄影、时尚写真、等众多领域，积累了大量的忠实客户，并在行业内具备了一定的影响力。独特的视觉、灵巧的思维方式、热情诚恳的服务态度、灵活弹性的操作方式,赢取了更多客户的信赖和支持.
+  </marquee>
+</div>
+﻿<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<div class="clear"></div>
+<div class="bokss">
+  <div style="margin:0 auto;width:966px;">
+    <div><img src="/templets/default/images/dh.gif"></div>
+    <div>
+      <ul style="width:800px">
+        <li style="float:left;margin-right:20px;white-space:nowrap;"><a href="/daodu/2013/0417/267.html" target=_blank >炼就火眼金睛,洞悉青岛婚纱摄影之消费陷阱</a></li>
+<li style="float:left;margin-right:20px;white-space:nowrap;"><a href="/daodu/2013/0417/272.html" target=_blank >韩式婚纱摄影,青岛觅尚工作室倾情打造完美新娘</a></li>
+<li style="float:left;margin-right:20px;white-space:nowrap;"><a href="/daodu/2013/0417/265.html" target=_blank >青岛摄影工作室拍婚纱照:美也要与众不同</a></li>
+<li style="float:left;margin-right:20px;white-space:nowrap;"><a href="/daodu/2013/0417/274.html" target=_blank >秀一场惊艳华丽的婚纱摄影</a></li>
+<li style="float:left;margin-right:20px;white-space:nowrap;"><a href="/daodu/2013/0417/263.html" target=_blank >青岛婚纱摄影哪家好?青岛觅尚摄影工作室见证圆满爱情</a></li>
+<li style="float:left;margin-right:20px;white-space:nowrap;"><a href="/daodu/2013/0524/546.html" target=_blank >拒绝流水线，所有婚纱套系一对一服务</a></li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+<div style="width:100%;height:240px;background:#E7E7E7;border-bottom:1px solid #dddddd">
+  <div style="width:966px;margin:0 auto;padding-top:20px;padding-bottom:10px">
+    <div style="float:left;width:570px;height:170px">
+      <div  class="flt" style="width:110px"> <span class="bodhti"><a href="/about/ms/">+ABOUT</a></span>
+        <ul  class="bodhul">
+          
+          <li><a href='/about/ms/' >关于觅尚</a></li>
+          
+          <li><a href='/about/contact/' >联系我们</a></li>
+          
+        </ul>
+      </div>
+      <div  class="flt" style="width:120px"> <span class="bodhti"><a href="/works">+SHOWCASE</a></span>
+        <ul  class="bodhul">
+          
+          <li><a href='/works/snhs/' >室内婚纱作品</a></li>
+          
+          <li><a href='/works/wjhs/' >外景婚纱作品</a></li>
+          
+          <li><a href='/works/xyczy/' >独家主题</a></li>
+          
+          <li><a href='/works/ssxz/' >时尚写真</a></li>
+          
+          <li><a href='/works/xrfx/' >新人分享</a></li>
+          
+        </ul>
+      </div>
+      <div  class="flt" style="width:110px"> <span class="bodhti"><a href="/service/lc/">+SERVICE</a></span>
+        <ul  class="bodhul">
+          
+          <li><a href='/service/lc/' >服务流程</a></li>
+          
+          <li><a href='/service/classroom/' >婚照讲堂</a></li>
+          
+        </ul>
+      </div>
+      <div  class="flt" style="width:110px"> <span class="bodhti"><a href="/news">+NEWS</a></span>
+        <ul  class="bodhul">
+          
+          <li><a href='/news/pomotions/' >优惠活动</a></li>
+          
+          <li><a href='/news/trade/' >行业新闻</a></li>
+          
+        </ul>
+      </div>
+      <div  class="flt" style="width:120px"> <span class="bodhti"><a href="/jingdian">+LOCATION</a></span>
+        <ul  class="bodhul">
+          
+          <li><a href='/jingdian/sqjd/' >青岛市区内景点</a></li>
+          
+          <li><a href='/jingdian/tszt/' >觅尚特色主题景点</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div style="float:right;width:390px;height:170px">
+      <div style="width:390px;height:120px;margin-bottom:5px;"> <a href="/"><img src="/templets/default/images/lcc.jpg" border="0"></a> </div>
+      <div>  觅尚摄影是青岛地区外景婚纱摄影的率先倡导者和坚定实践者。成立以来，觅尚摄影拍摄的足迹遍及青岛各处，先后在市区，郊区...</div>
+    </div>
+  </div>
+  <div class="clear"></div>
+  <div style="width:966px;margin:0 auto;"> <span style="font-size:14px;font-weight:700;color:#C66131">友情链接：</span> 
+    <a href='http://www.dedecms.com' target='_blank'>织梦CMS官方</a> 
+    
+    <a href='http://docs.dedecms.com/' target='_blank'>DedeCMS维基手册</a> 
+    
+    <a href='http://bbs.dedecms.com' target='_blank'>织梦技术论坛</a> 
+     </div>
+</div>
+<div style="height:40px;margin:0 auto;width:966px;margin-top:10px">
+  <div style="float:left;width:530px;height:40px;"> <a href="/">苏州婚纱摄影工作室</a> <a href="http://www.mishangphoto.com"> 苏州婚纱摄影</a> COPYRIGHT @ 2013-2015 GELOU dedecms.COM AGENCY </div>
+  <div style="float:right;text-align:right;height:40px;width:430px">技术支持：<a href="//zhanoo.com">站窝窝</a> <b>青岛织梦婚纱摄影工作室</b>  版权所有   </div>
+</div>
+
+</body></html>

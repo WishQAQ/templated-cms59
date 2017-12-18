@@ -1,0 +1,1 @@
+<div  class="sban" style="height:393px;background:url([field:litpic/]) center"></div>

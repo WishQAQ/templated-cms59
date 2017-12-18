@@ -1,0 +1,1 @@
+<div class="demo"><a href="[field:redirecturl/]" title="" target="_blank"><img src="[field:litpic/]" alt="" height=393px /></a></div>

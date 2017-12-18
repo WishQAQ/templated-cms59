@@ -1,0 +1,41 @@
+<?php
+$z[0]=Array("global","",204,236);
+$z[0][4]['name']="cfg_templets_skin";
+$z[1]=Array("arclist","\r\n        <li style=\"float:left;margin-right:20px;white-space:nowrap;\"><a href=\"[field:arcurl/]\" target=_blank >[field:title/]</a></li>\r\n        ",311,571);
+$z[1][4]['row']="20";
+$z[1][4]['titlelen']="200";
+$z[1][4]['channelid']="1";
+$z[1][4]['typeid']="50";
+$z[1][4]['orderby']="sortrank";
+$z[1][4]['orderway']="asc";
+$z[2]=Array("channel","\r\n          <li><a href='[field:typelink/]' >[field:typename/]</a></li>\r\n          ",987,1131);
+$z[2][4]['type']="son";
+$z[2][4]['typeid']="1";
+$z[2][4]['row']="18";
+$z[3]=Array("channel","\r\n          <li><a href='[field:typelink/]' >[field:typename/]</a></li>\r\n          ",1307,1452);
+$z[3][4]['type']="son";
+$z[3][4]['typeid']="40";
+$z[3][4]['row']="18";
+$z[4]=Array("channel","\r\n          <li><a href='[field:typelink/]' >[field:typename/]</a></li>\r\n          ",1633,1778);
+$z[4][4]['type']="son";
+$z[4][4]['typeid']="30";
+$z[4][4]['row']="18";
+$z[5]=Array("channel","\r\n          <li><a href='[field:typelink/]' >[field:typename/]</a></li>\r\n          ",1949,2094);
+$z[5][4]['type']="son";
+$z[5][4]['typeid']="27";
+$z[5][4]['row']="18";
+$z[6]=Array("channel","\r\n          <li><a href='[field:typelink/]' >[field:typename/]</a></li>\r\n          ",2273,2418);
+$z[6][4]['type']="son";
+$z[6][4]['typeid']="36";
+$z[6][4]['row']="18";
+$z[7]=Array("global","",2603,2635);
+$z[7][4]['name']="cfg_templets_skin";
+$z[8]=Array("global","",2687,2716);
+$z[8][4]['name']="jianjie";
+$z[9]=Array("flink","\r\n    [field:link /]\r\n    ",2900,2975);
+$z[9][4]['titlelen']="24";
+$z[9][4]['row']="40";
+$z[10]=Array("global","",3394,3423);
+$z[10][4]['name']="banquan";
+
+?>

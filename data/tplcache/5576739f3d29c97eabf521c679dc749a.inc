@@ -1,0 +1,15 @@
+{dede:pagestyle maxwidth='800' pagepicnum='9999' ddmaxwidth='200' row='3' col='4' value='1'/}
+{dede:img ddimg='/uploads/allimg/130414/1-130414115A1.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414115A1.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414115A2.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414115A2.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414115A4.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414115A4.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414115A5.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414115A5.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414115A6.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414115A6.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414115A8.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414115A8.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414115A9.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414115A9.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414115F2.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414115F2.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414115F2-50.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414115F2-50.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414115F8.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414115F8.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414115G0.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414115G0.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414115G0-50.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414115G0-50.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414115G1.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414115G1.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414115G2.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414115G2.jpg {/dede:img}

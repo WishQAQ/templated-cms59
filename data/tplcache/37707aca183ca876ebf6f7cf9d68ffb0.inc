@@ -1,0 +1,2 @@
+<li class="inebss"> <span><a href="[field:arcurl/]"  target="_blank">[field:title/]</a></span><br>
+            <span style="color:#888888">POST TIME : [field:pubdate function='strftime("%Y/%m/%d",@me)'/]</span> </li>

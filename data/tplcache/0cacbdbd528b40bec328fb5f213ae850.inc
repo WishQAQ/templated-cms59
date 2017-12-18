@@ -1,0 +1,16 @@
+{dede:pagestyle maxwidth='800' pagepicnum='9999' ddmaxwidth='200' row='3' col='4' value='1'/}
+{dede:img ddimg='/uploads/allimg/130414/1-1304141S912.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-1304141S912.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-1304141S915.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-1304141S915.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-1304141S920.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-1304141S920.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-1304141S920-50.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-1304141S920-50.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-1304141S932.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-1304141S932.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-1304141S932-50.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-1304141S932-50.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-1304141S936.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-1304141S936.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-1304141S945.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-1304141S945.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-1304141S951.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-1304141S951.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-1304141S952.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-1304141S952.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-1304141S953.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-1304141S953.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-1304141S955.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-1304141S955.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-1304141S957.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-1304141S957.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-1304141S958.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-1304141S958.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-1304141T002.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-1304141T002.jpg {/dede:img}

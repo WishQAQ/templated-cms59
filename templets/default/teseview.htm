@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<link href="{dede:global.cfg_templets_skin/}/style/mycss.css" rel="stylesheet" type="text/css"/>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<head>
+<body>
+{dede:include filename="top.html"/}
+
+{dede:arclist idlist='149'  channelid='1' }
+<div  class="sban" style="height:393px;background:url([field:litpic/]) center"></div>
+{/dede:arclist}
+
+ {dede:include filename="dhcc.html"/} 
+
+<div class="sdhc">
+   <div><img src="{dede:global.cfg_templets_skin/}/images/tese.jpg"></div>
+   <div>
+   <table border="0" width="966" cellspacing="0" cellpadding="0" height="30" style="border-bottom:1px solid #AD6931">
+	<tr>
+		<td>
+		<img border="0" src="{dede:global.cfg_templets_skin/}/images/ico2.jpg" width="17" height="13">您现在的位置：<a href="/" target="_blank">首页</a> &gt; {dede:field.typename/}</td>
+	</tr>
+	</table>
+		<div class="anss" style="padding-left:500px">
+                  
+                                   {dede:channel  orderway='desc' currentstyle="<div class='ts1'><a href='~typelink~'>~typename~</a></div>"}
+										<div class="ts2" ><a href="[field:typeurl/]" target="_blank">[field:typename/]</a></div>
+								   {/dede:channel}
+                  
+		</div>
+
+	
+   </div>
+</span>
+</div>
+
+<div class="bodyss">
+
+<div class="wtitle">{dede:field.title/}</div>
+<div style="margin-top:20px">{dede:field.body/}</div>
+
+
+</div>
+
+
+{dede:include filename="end.html"/}
+
+</body>
+
+</html>
+
+
+
+
+

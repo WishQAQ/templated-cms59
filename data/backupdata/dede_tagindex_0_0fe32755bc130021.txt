@@ -1,0 +1,17 @@
+INSERT INTO `dede_tagindex` VALUES('1','123123','45','0','1','0','0','1365723374','1365723374','1365723374');
+INSERT INTO `dede_tagindex` VALUES('2','www.hjia520.','36','0','1','0','0','1367089798','1367089798','1367089798');
+INSERT INTO `dede_tagindex` VALUES('3','www.hjia520.','16','0','1','0','0','1367575097','1367575097','1367575097');
+INSERT INTO `dede_tagindex` VALUES('4','www.hjia520.','37','0','1','0','0','1367994415','1367994415','1367994415');
+INSERT INTO `dede_tagindex` VALUES('5','www.hjia520.','36','0','1','0','0','1368077609','1368077609','1368077609');
+INSERT INTO `dede_tagindex` VALUES('6','www.hjia520.','36','0','1','0','0','1368170880','1368170880','1368170880');
+INSERT INTO `dede_tagindex` VALUES('7','www.hjia520.','28','0','1','0','0','1368356481','1368356481','1368356481');
+INSERT INTO `dede_tagindex` VALUES('8','www.hjia520.','32','0','1','0','0','1368427052','1368427052','1368427052');
+INSERT INTO `dede_tagindex` VALUES('9','www.hjia520.','37','0','1','0','0','1368761613','1368761613','1368761613');
+INSERT INTO `dede_tagindex` VALUES('10','www.hjia520.','48','0','1','0','0','1368895816','1368895816','1368895816');
+INSERT INTO `dede_tagindex` VALUES('11','www.hjia520.','47','0','1','0','0','1368916311','1368916311','1368916311');
+INSERT INTO `dede_tagindex` VALUES('12','www.hjia520.','30','0','1','0','0','1368965856','1368965856','1368965856');
+INSERT INTO `dede_tagindex` VALUES('13','www.hjia520.','46','0','1','0','0','1369214992','1369214992','1369214992');
+INSERT INTO `dede_tagindex` VALUES('14','www.hjia520.','49','0','1','0','0','1369444434','1369444434','1369444434');
+INSERT INTO `dede_tagindex` VALUES('15','www.hjia520.','35','0','1','0','0','1369445191','1369445191','1369445191');
+INSERT INTO `dede_tagindex` VALUES('16','$$$$$$$ $$$$','28','0','3','0','0','1369500750','1369500750','1369500794');
+INSERT INTO `dede_tagindex` VALUES('17','www.hjia520.','27','0','1','0','0','1369708168','1369708168','1369708168');

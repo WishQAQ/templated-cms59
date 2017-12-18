@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:field.title/}_{dede:global.cfg_webname/}</title>
+<link href="{dede:global.cfg_templets_skin/}/style/mycss.css" rel="stylesheet" type="text/css"/>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<head>
+<body>
+{dede:include filename="top.html"/}
+{dede:arclist idlist='55'  channelid='1' }
+<div  class="sban" style="height:393px;background:url([field:litpic/]) center"></div>
+{/dede:arclist}
+
+ {dede:include filename="dhcc.html"/} 
+
+<div class="sdhc">
+   <div><img src="{dede:global.cfg_templets_skin/}/images/zuopin.jpg"></div>
+   <div>
+   <table border="0" width="966" cellspacing="0" cellpadding="0" height="30" style="border-bottom:1px solid #AD6931">
+	<tr>
+		<td>
+		<img border="0" src="{dede:global.cfg_templets_skin/}/images/ico2.jpg" width="17" height="13">您现在的位置：<a href="/" >首页</a> &gt; {dede:field.typename/}</td>
+	</tr>
+	</table>
+		<div class="anss" style="padding-left:400px">
+                  
+                                   {dede:channel  orderway='desc' currentstyle="<div class='ts1'><a href='#' >~typename~</a></div>"}
+										<div class="ts2" ><a href="[field:typeurl/]">[field:typename/]</a></div>
+								   {/dede:channel}
+                  
+		</div>
+
+	
+   </div>
+</span>
+</div>
+
+<div class="bodyss">
+<table border="0" width="966" cellspacing="0" cellpadding="0" height="153">
+	<tr>
+		<td width="228" valign="middle" align=center>
+		{dede:prenext get='preimg'/}
+		
+		</td>
+		<td valign="top" width="149">
+		<img src="{dede:field.litpic/}" width=114 height=158 style="padding:6px;border:1px solid #dddddd">
+		</td>
+		<td valign="top" align=left>
+		<div class="wtitle" style="color:#995C2A">{dede:field.title/}</div>
+		<div style="font-size:12px;color:#888888">SHOWCASE TITLE</div>
+		<div style="font-size:12px;color:#888888">POSTTIME：{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</div>
+		<table border="0" width="377" cellspacing="0" cellpadding="0">
+	<tr>
+		<td width="188" height="25">摄影师：{dede:field.sheyingshi/}</td>
+		<td width="189">拍摄新人：{dede:field.paishexinren/}</td>
+	</tr>
+	<tr>
+		<td width="188" height="25">查看人次：<script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script></td>
+		<td width="189">拍摄地点：{dede:field.paishedidian/}</td>
+	</tr>
+	</table>
+	<div><!-- Baidu Button BEGIN -->
+<div id="bdshare" class="bdshare_t bds_tools_32 get-codes-bdshare">
+<a class="bds_qzone"></a>
+<a class="bds_tsina"></a>
+<a class="bds_tqq"></a>
+<a class="bds_renren"></a>
+<a class="bds_t163"></a>
+<span class="bds_more"></span>
+<a class="shareCount"></a>
+</div>
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=0" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END --></div>
+		</td>
+		<td width="212" valign="middle" align=center>
+		{dede:prenext get='nextimg'/}</td>
+	</tr>
+</table>
+<div style="margin-top:20px;text-align:center">
+ {dede:field name='imgurls' alt=''}
+						                                        
+      <img src='[field:imgsrc/]' />
+               
+               
+             {/dede:field} 
+
+</div>
+
+
+
+<table border="0" width="966" id="table2" cellspacing="0" cellpadding="0" style="margin-top:20px">
+	<tr>
+		<td align=left>{dede:field.body/}</td>
+	</tr>
+</table>
+
+
+
+<table border="0" width="966" id="table1" cellspacing="0" cellpadding="0" height="180">
+	<tr>
+		<td align="center" width="483">
+		{dede:prenext get='preimg'/}</td>
+		<td align="center" width="483">
+		{dede:prenext get='nextimg'/}</td>
+	</tr>
+</table>
+
+
+</div>
+
+
+{dede:include filename="end.html"/}
+
+</body>
+
+</html>
+
+
+
+
+

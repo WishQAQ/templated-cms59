@@ -1,0 +1,48 @@
+<?php
+$z[0]=Array("field","",243,262);
+$z[0][4]['name']="title";
+$z[1]=Array("global","",263,289);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("global","",310,342);
+$z[2][4]['name']="cfg_templets_skin";
+$z[3]=Array("global","",429,459);
+$z[3][4]['name']="cfg_description";
+$z[4]=Array("global","",495,522);
+$z[4][4]['name']="cfg_keywords";
+$z[5]=Array("include","",541,576);
+$z[5][4]['filename']="top.html";
+$z[6]=Array("arclist","\n<div  class=\"sban\" style=\"height:393px;background:url([field:litpic/]) center\"></div>\n",578,722);
+$z[6][4]['idlist']="28";
+$z[6][4]['channelid']="1";
+$z[7]=Array("include","",725,761);
+$z[7][4]['filename']="dhcc.html";
+$z[8]=Array("global","",801,833);
+$z[8][4]['name']="cfg_templets_skin";
+$z[9]=Array("global","",1021,1053);
+$z[9][4]['name']="cfg_templets_skin";
+$z[10]=Array("field","",1159,1181);
+$z[10][4]['name']="typename";
+$z[11]=Array("channel","\n										<div class=\"ts2\" ><a href=\"[field:typeurl/]\" target=\"_blank\">[field:typename/]</a></div>\n								   ",1306,1537);
+$z[11][4]['orderway']="desc";
+$z[11][4]['currentstyle']="<div class='ts1'><a href='~typelink~'>~typename~</a></div>";
+$z[12]=Array("field","",1637,1656);
+$z[12][4]['name']="title";
+$z[13]=Array("field","",1700,1720);
+$z[13][4]['name']="writer";
+$z[14]=Array("field","",1753,1773);
+$z[14][4]['name']="source";
+$z[15]=Array("field","",1812,1868);
+$z[15][4]['name']="pubdate";
+$z[15][4]['function']="MyDate('Y-m-d H:i',@me)";
+$z[16]=Array("field","",1914,1941);
+$z[16][4]['name']="phpurl";
+$z[17]=Array("field","",1965,1988);
+$z[17][4]['name']="id";
+$z[18]=Array("field","",1993,2017);
+$z[18][4]['name']="mid";
+$z[19]=Array("field","",2112,2130);
+$z[19][4]['name']="body";
+$z[20]=Array("include","",2148,2183);
+$z[20][4]['filename']="end.html";
+
+?>

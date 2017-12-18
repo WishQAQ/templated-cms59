@@ -1,0 +1,41 @@
+<?php
+$z[0]=Array("global","",92,124);
+$z[0][4]['name']="cfg_templets_skin";
+$z[1]=Array("global","",241,266);
+$z[1][4]['name']="cfg_cmsurl";
+$z[2]=Array("global","",875,901);
+$z[2][4]['name']="cfg_cmspath";
+$z[3]=Array("global","",1916,1948);
+$z[3][4]['name']="cfg_templets_skin";
+$z[4]=Array("channel","\r\n            <li><a href='[field:typelink/]' target=\"_blank\" >[field:typename/]</a></li>\r\n            ",2629,2793);
+$z[4][4]['type']="son";
+$z[4][4]['typeid']="1";
+$z[4][4]['row']="18";
+$z[5]=Array("channel","\r\n            <li><a href='[field:typelink/]' target=\"_blank\" >[field:typename/]</a></li>\r\n            ",2993,3158);
+$z[5][4]['type']="son";
+$z[5][4]['typeid']="30";
+$z[5][4]['row']="18";
+$z[6]=Array("channel","\r\n            <li><a href='[field:typelink/]' target=\"_blank\">[field:typename/]</a></li>\r\n            ",3451,3615);
+$z[6][4]['type']="son";
+$z[6][4]['typeid']="27";
+$z[6][4]['row']="18";
+$z[7]=Array("channel","\r\n            <li [field:global name='autoindex' runphp='yes']if(@me==2){@me=\"class=hots\";}else{@me='';}[/field:global]><a href='[field:typelink/]' target=\"_blank\">[field:typename/]</a></li>\r\n            ",3841,4107);
+$z[7][4]['type']="son";
+$z[7][4]['typeid']="40";
+$z[7][4]['row']="18";
+$z[8]=Array("channel","\r\n            <li><a href='[field:typelink/]' target=\"_blank\">[field:typename/]</a></li>\r\n            ",4305,4469);
+$z[8][4]['type']="son";
+$z[8][4]['typeid']="36";
+$z[8][4]['row']="18";
+$z[9]=Array("channel","\r\n            <li><a href='[field:typelink/]' target=\"_blank\">[field:typename/]</a></li>\r\n            ",4683,4847);
+$z[9][4]['type']="son";
+$z[9][4]['typeid']="33";
+$z[9][4]['row']="18";
+$z[10]=Array("global","",5035,5067);
+$z[10][4]['name']="shangcheng";
+$z[11]=Array("global","",5170,5196);
+$z[11][4]['name']="xici";
+$z[12]=Array("global","",5301,5333);
+$z[12][4]['name']="taobaodian";
+
+?>

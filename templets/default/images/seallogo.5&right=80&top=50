@@ -1,0 +1,129 @@
+
+
+
+
+
+
+
+
+function RndNum_CNNIC(k){
+	for (var rnd = "", i = k; i--; ) 
+		rnd += Math.floor( Math.random() * 10 );
+	return rnd;
+}
+var KX_cfg_data = { cnnic_dn : '', cnnic_lang : 'zh_cn' };
+
+	KX_cfg_data.cnnic_sn = "a11123111010008228307708";
+	KX_cfg_data.cnnic_u1 = "https://ss.knet.cn/verifyseal.dll" + "?sn=" + KX_cfg_data.cnnic_sn + "&ct=df" + "&a=1&pa=" + RndNum_CNNIC(6);
+	KX_cfg_data.cnnic_u2 = "https://ss.knet.cn/static/images/logo/cnnic.png";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var KX_TOOL = (function(){
+	var qk = document.compatMode !== 'CSS1Compat',
+		ie = /ie /i.test( navigator.userAgent ),
+		i6 = /ie 6.0/i.test( navigator.userAgent ),
+		rt = qk ? document.body : document.documentElement;
+		
+	return {
+		qk : qk, ie : ie, i6 : i6,
+		$  : function(i,c){ return (c || document).getElementById(i); },
+		sine : function(t,b,c,d){ return ((t/=d/2) < 1) ? (c/2*t*t + b) : (-c/2 * ((--t)*(t-2) - 1) + b); },
+		getViewPort : function(){ return { width : rt.clientWidth, height : rt.clientHeight }; },
+		getScroll : function(){ return { left : window.pageXOffset || rt.scrollLeft, top : window.pageYOffset || rt.scrollTop }; }
+	};
+})();
+var KX_Event = (function(){
+	if( window.addEventListener ) return {
+		get : function(e){return e;},
+		add : function(e, t, h){ if(!e) return; e.addEventListener(t, h, false); },
+		target : function(e){ return e.target; },
+		prevent : function(e){ e.preventDefault(), e.stopPropagation(); }
+	};
+	return {
+		get : function(e){ return window.event; },
+		add : function(e, t, h){ if(!e) return; e.attachEvent('on' + t, h); },
+		target : function(e){ return window.event.srcElement; },
+		prevent : function(e){ window.event.cancleBubble = true, window.event.returnValue = false; }
+	};
+})();
+
+function KXverifyFixed(opts){
+	var self = this;
+	
+	opts.position = opts.position ? opts.position : 'absolute';
+	opts.top = opts.top ? opts.top : 0;
+	opts.right = opts.right ? opts.right : 0;
+	opts.width = opts.width ? opts.width : 128;
+	opts.height = opts.height ? opts.height : 47;
+	
+	self.cfg = {
+		speed		: 13,
+		delay		: 50,
+		position	: opts.position,
+		top			: opts.top,
+		right		: opts.right,
+		width		: opts.width,
+		height		: opts.height,
+		opacity		: opts.opacity
+	};
+	self.init =  function(){
+		var box = self.box, cfg = self.cfg;
+		if(KX_TOOL.qk && KX_TOOL.ie || KX_TOOL.i6) cfg.position = 'absolute';
+		self.build();
+	}
+	self.build = function(){
+		var box = self.box, cfg = self.cfg;
+		
+		box.id = 'knet_kx_verify';
+		box.style.top = cfg.top + 'px';
+		box.style.right = cfg.right + 'px';
+		box.style.width = cfg.width + 'px';
+		box.style.position = cfg.position;
+		box.style.filter = 'alpha(opacity=' + cfg.opacity*100 + ')';
+		box.style.opacity = cfg.opacity;
+		box.innerHTML = '<iframe id="knet_kx_verify_bd_ifm" style="width:128px;height:47px;border:none;position:absolute;top:0;left:0;"></iframe><a id="knet_kx_verify_bd" target="_blank" title="点击查看详情" href="' + KX_cfg_data.cnnic_u1 + '" style="position:absolute;top:0;left:0;z-index:999;background: url(' + KX_cfg_data.cnnic_u2 + ') no-repeat 0 0;width:128px;height:47px;display:block;">';
+		document.body.appendChild( box );
+		self.fixPositon();
+		KX_Event.add( window, 'scroll', function(e){ window.setTimeout(function(){ self.fixPositon(); }, self.cfg.delay); });
+		KX_Event.add( window, 'resize', function(e){ window.setTimeout(function(){ self.fixPositon(); }, self.cfg.delay); });
+	}
+	self.fixPositon = function(){
+		var box = self.box, cfg = self.cfg,
+			v = KX_TOOL.getViewPort(), s = KX_TOOL.getScroll(),
+			top = parseInt(box.style.top), 
+			off = cfg.top, 
+			t = 0, d = 30, b = top, c = ( box.style.position === 'fixed' ) ? (off - top) : (s.top + (off - top));
+		(function(){
+			box.style.top = Math.ceil( KX_TOOL.sine(t, b, c, d) ) + 'px';
+			if(++t <= d) setTimeout( arguments.callee, cfg.speed);
+		})();
+	}
+	self.box = document.createElement('div');
+	self.build();
+}
+var KX_load = window.onload;
+window.onload = function(){
+	if( typeof KX_load == 'function' ) KX_load();
+	new KXverifyFixed({
+		position : 'absolute',
+		opacity : 0.5,
+		right : 80,
+		top : 50,
+		ct	: 'df'
+	});
+}

@@ -1,0 +1,7 @@
+INSERT INTO `dede_taglist` VALUES('1','177','-1','45','123123');
+INSERT INTO `dede_taglist` VALUES('14','627','-1','49','www.hjia520.');
+INSERT INTO `dede_taglist` VALUES('15','628','-1','35','www.hjia520.');
+INSERT INTO `dede_taglist` VALUES('16','696','-1','28','$$$$$$$ $$$$');
+INSERT INTO `dede_taglist` VALUES('16','697','-1','37','$$$$$$$ $$$$');
+INSERT INTO `dede_taglist` VALUES('16','698','-1','38','$$$$$$$ $$$$');
+INSERT INTO `dede_taglist` VALUES('17','869','-1','27','www.hjia520.');

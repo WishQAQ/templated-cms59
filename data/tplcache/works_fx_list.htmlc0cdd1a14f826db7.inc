@@ -1,0 +1,41 @@
+<?php
+$z[0]=Array("field","",243,262);
+$z[0][4]['name']="title";
+$z[1]=Array("global","",263,289);
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("global","",310,342);
+$z[2][4]['name']="cfg_templets_skin";
+$z[3]=Array("global","",429,459);
+$z[3][4]['name']="cfg_description";
+$z[4]=Array("global","",495,522);
+$z[4][4]['name']="cfg_keywords";
+$z[5]=Array("include","",541,576);
+$z[5][4]['filename']="top.html";
+$z[6]=Array("arclist","\n<div  class=\"sban\" style=\"height:393px;background:url([field:litpic/]) center\"></div>\n",578,722);
+$z[6][4]['idlist']="55";
+$z[6][4]['channelid']="1";
+$z[7]=Array("include","",725,761);
+$z[7][4]['filename']="dhcc.html";
+$z[8]=Array("global","",801,833);
+$z[8][4]['name']="cfg_templets_skin";
+$z[9]=Array("global","",1023,1055);
+$z[9][4]['name']="cfg_templets_skin";
+$z[10]=Array("field","",1162,1184);
+$z[10][4]['name']="typename";
+$z[11]=Array("channel","\n										<div class=\"ts2\" ><a href=\"[field:typeurl/]\" target=\"_blank\">[field:typename/]</a></div>\n								   ",1309,1576);
+$z[11][4]['orderway']="desc";
+$z[11][4]['currentstyle']="<div class='ts1'><a href='~typelink~'>~typename~</a></div>";
+$z[12]=Array("field","",1765,1786);
+$z[12][4]['name']="content";
+$z[13]=Array("pagelist","",1908,1986);
+$z[13][4]['listitem']="info,index,end,pre,next,pageno,option";
+$z[13][4]['listsize']="5";
+$z[14]=Array("list","\n						<li style=\"float:left;margin-left:6px;margin-right:6px;margin-bottom:40px\">\n						<div class='npptsfx' onmouseover=\"this.className='npptsfx2'\"  onmouseout=\"this.className='npptsfx'\">\n							<a href=\"[field:arcurl/]\" target=\"_blank\" ><img src=\"[field:litpic/]\"  alt=\"[field:title/]\" title=\"[field:title/]\"  class=\"imgss\" /></a>\n							<div class=\"btss\">\n							   <div style=\"color:#ffffff;font-size:10px;height:11px;line-height:11px\">Date: </b>[field:pubdate function='strftime(\"%Y/%m/%d\",@me)'/]</div>\n							   <div style=\"margin-top:5px\"><a href=\"[field:arcurl/]\" target=\"_blank\" >[field:title/]</a></div>\n							</div>\n                             <div class=\"lss\">[field:title/]</div>\n						</div>\n						\n                         \n						</li>\n             \n			",2115,2924);
+$z[14][4]['pagesize']="12";
+$z[15]=Array("pagelist","",3045,3123);
+$z[15][4]['listitem']="info,index,end,pre,next,pageno,option";
+$z[15][4]['listsize']="5";
+$z[16]=Array("include","",3203,3238);
+$z[16][4]['filename']="end.html";
+
+?>

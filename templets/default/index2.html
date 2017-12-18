@@ -1,0 +1,458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link href="{dede:global.cfg_templets_skin/}/style/mycss.css" rel="stylesheet" type="text/css"/>
+<script>
+<!--
+/*第一种形式 第二种形式 更换显示样式*/
+function setTab2(name,cursel,n){
+for(i=1;i<=n;i++){
+  var menu=document.getElementById(name+i);
+  var con=document.getElementById("con_"+name+"_"+i);
+  menu.className=i==cursel?"hover":"";
+  con.style.display=i==cursel?"block":"none";
+}
+}
+//-->
+</script>
+
+
+</head>
+{dede:include filename="top.html"/} 
+
+<div class="banner">
+<div id="prev"><a ><img src="{dede:global.cfg_templets_skin/}/images/next.png" /></a></div>
+<div id="next"><a ><img src="{dede:global.cfg_templets_skin/}/images/prev.png" /></a></div>
+{dede:arclist row=5 titlelen=30  typeid=48 addfields='redirecturl' channelid='1' orderway='asc'}
+<div class="demo"><a href="[field:redirecturl/]" title=""><img src="[field:litpic/]" alt="" height=393px /></a></div>
+{/dede:arclist}
+
+<ul class="none1">
+{dede:arclist row=5 titlelen=30  typeid=48 addfields='redirecturl' channelid='1' orderway='asc'}
+<li><a href="#"></a></li>
+{/dede:arclist}
+</ul>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#prev").hover(function(){
+$(this).find("a").css("display","block")
+						  },function(){
+$(this).find("a").css("display","none")
+							  });
+$("#next").hover(function(){
+$(this).find("a").css("display","block")
+						  },function(){
+$(this).find("a").css("display","none")
+							  });
+if($("ul.none1 li").size()>0){
+$("ul.none1").tabs(".banner > .demo", {effect: 'fade',loop:true,fadeOutSpeed:1000,fadeInSpeed:1500,rotate: true}).slideshow({autoplay:true,interval: 3000});	
+}
+$("#prev a").click(function(){
+$("ul.none1 li a.current").parent().prev("li").find("a").click();
+});	  
+$("#next a").click(function(){						   
+$("ul.none1 li a.current").parent().next("li").find("a").click();
+});	 
+						   })
+</script>
+    </div>
+    
+    
+ {dede:include filename="dhcc.html"/} 
+	<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/lrtk.js"></script>
+
+   <div style="margin:0 auto;height:315px;width:966px;background:url({dede:global.cfg_templets_skin/}/images/newsbk.jpg)">
+         <div style="float:left;width:620px">
+            <div><map name="FPMap2">
+				<area href="/news" shape="rect" coords="547, 14, 615, 38">
+				</map><img src="{dede:global.cfg_templets_skin/}/images/newss.jpg" usemap="#FPMap2"></div>
+            <div style="width:620px;margin-top:20px">
+               <div style="float:left;width:240px">
+                  <div style="position:relative;height:124px;padding-top:8px;padding-left:13px">
+                     	   	{dede:arclist row='1' titlelen='42'  typeid='27' channelid='1' flag='c' }
+                     	   	   <a href="[field:arcurl/]" ><img src="[field:litpic/]" width=216px height=100px/></a>
+							{/dede:arclist}
+							<div style="position: absolute; left:1px; top:-4px"><img src="{dede:global.cfg_templets_skin/}/images/new.png"></div>
+                  </div>
+                  <div style="line-height:27px;padding-left:10px">
+                           {dede:arclist row='1' titlelen='36'  typeid='27' channelid='1' flag='c' }
+                             <span><a href="[field:arcurl/]" style="color:#995C2A;font-size:14px">[field:title/]</a></span><br>
+                             <span style="color:#888888">[field:description function="cn_substr(@me,90)"/]</span><br>
+                             <span > ● POST TIME : [field:pubdate function='strftime("%Y/%m/%d",@me)'/]</span>
+                           {/dede:arclist}
+                  </div>
+               </div>
+               <div style="float:right;width:360px">
+               		   <ul>
+					   	{dede:arclist row='5' titlelen='72'  typeid='27' channelid='1'  }
+				              <li class="inebss">
+				                <span><a href="[field:arcurl/]" >[field:title/]</a></span><br>
+				                <span style="color:#888888">POST TIME : [field:pubdate function='strftime("%Y/%m/%d",@me)'/]</span>
+				              </li>
+					    {/dede:arclist}
+					   </ul>
+               </div>
+            </div>
+         </div>
+         
+         <div style="float:right;width:336px">
+             <div><a href="/news/pomotions/"><img src="{dede:global.cfg_templets_skin/}/images/huodong.jpg"></a></div>
+             <div style="margin-top:10px;padding-left:11px;padding-top:5px">
+             <div class="focus">
+             
+			  <ul class="rslides f426x240" >
+{dede:arclist row=10 titlelen=30  typeid=49 addfields='redirecturl' channelid='1' orderway='asc'}
+	<li><a href="[field:arcurl/]" target=_blank><img src="[field:litpic/]"  width="314px" height="227px"/></a></li>
+{/dede:arclist}
+              </ul>
+        </div>
+             
+             </div>
+         </div>
+   
+   </div> 
+       <script type="text/javascript">
+function setTab(name,cursel){
+	cursel_0=cursel;
+	for(var i=1; i<=links_len; i++){
+		var menu = document.getElementById(name+i);
+		var menudiv = document.getElementById("con_"+name+"_"+i);
+		if(i==cursel){
+			menu.className="off";
+			menudiv.style.display="block";
+		}
+		else{
+			menu.className="on";
+			menudiv.style.display="none";
+		}
+	}
+}
+function Next(){                                                        
+	cursel_0++;
+	if (cursel_0>links_len)cursel_0=1
+	setTab(name_0,cursel_0);
+} 
+var name_0='one';
+var cursel_0=1;
+var ScrollTime=3000;//循环周期（毫秒）
+var links_len,iIntervalId;
+onload=function(){
+	var links = document.getElementById("tab1").getElementsByTagName('li')
+	links_len=links.length;
+	for(var i=0; i<links_len; i++){
+		links[i].onmouseover=function(){
+			clearInterval(iIntervalId);
+			this.onmouseout=function(){
+				iIntervalId = setInterval(Next,ScrollTime);;
+			}
+		}
+	}
+	document.getElementById("con_"+name_0+"_"+links_len).parentNode.onmouseover=function(){
+		clearInterval(iIntervalId);
+		this.onmouseout=function(){
+			iIntervalId = setInterval(Next,ScrollTime);;
+		}
+	}
+	setTab(name_0,cursel_0);
+	iIntervalId = setInterval(Next,ScrollTime);
+}
+</script>
+
+   <div style="text-align:center"><img src="{dede:global.cfg_templets_skin/}/images/xw.jpg"></div>
+<div  id="tab1" >  
+   <div style="margin:0 auto;height:79px;width:966px;background:url({dede:global.cfg_templets_skin/}/images/zxkp.jpg)">
+   <table border="0" width="966" id="table1" height="79" cellspacing="0" cellpadding="0">
+			<tr>
+				<td width="808">　</td>
+				<td width="84" align=right>
+	<div class="mmss" style="padding-top:10px">
+		<ul >
+			<li id="one1" onclick="setTab('one',1)"> </li>
+			<li id="one2" onclick="setTab('one',2)"> </li>
+			<li id="one3" onclick="setTab('one',3)"> </li>
+		</ul>
+	</div>
+
+				</td>
+				<td width="74"><a href="/works" style="display:block;width:70px;height:78px;"></a></td>
+			</tr>
+		</table>
+   </div>
+
+
+   <div style="margin:0 auto;width:966px;height:375px">
+		
+<div id="con_one_1" >
+
+	  	
+					{dede:arclist row=4 titlelen=30  typeid='42,41,43,44' channelid='2' }
+						<div style="float:left;margin-left:6px;margin-right:6px">
+						<div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'">
+							<a href="[field:arcurl/]" ><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"  class="imgss" /></a>
+							<div class="btss">
+							   <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>[field:pubdate function='strftime("%Y/%m/%d",@me)'/]</div>
+							   <div style="margin-top:5px"><a href="[field:arcurl/]" >[field:title/]</a></div>
+							</div>
+                             <div class="lss">[field:title/]</div>
+						</div>
+						
+                         
+						</div>
+					{/dede:arclist}
+              
+</div>
+<div id="con_one_2" style="display:none" >
+	  	
+					{dede:arclist row=8 titlelen=30  typeid='42,41,43,44' channelid='2' limit='4,4  }
+						<div style="float:left;margin-left:6px;margin-right:6px">
+						<div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'">
+							<a href="[field:arcurl/]" ><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"  class="imgss" /></a>
+							<div class="btss">
+							   <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>[field:pubdate function='strftime("%Y/%m/%d",@me)'/]</div>
+							   <div style="margin-top:5px"><a href="[field:arcurl/]" >[field:title/]</a></div>
+							</div>
+                             <div class="lss">[field:title/]</div>
+						</div>
+						
+                         
+						</div>
+					{/dede:arclist}
+</div>
+
+<div id="con_one_3" style="display:none" >
+	  						{dede:arclist row=12 titlelen=30  typeid='42,41,43,44' channelid='2'  limit='8,4 }
+						<div style="float:left;margin-left:6px;margin-right:6px">
+						<div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'">
+							<a href="[field:arcurl/]" ><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"  class="imgss" /></a>
+							<div class="btss">
+							   <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>[field:pubdate function='strftime("%Y/%m/%d",@me)'/]</div>
+							   <div style="margin-top:5px"><a href="[field:arcurl/]" >[field:title/]</a></div>
+							</div>
+                             <div class="lss">[field:title/]</div>
+						</div>
+						
+                         
+						</div>
+					{/dede:arclist}
+     
+</div>
+
+   </div>   
+ </div>
+   <div style="text-align:center"><img src="{dede:global.cfg_templets_skin/}/images/xw.jpg"></div>
+   
+        <div style="text-align:center">
+	    {dede:arclist idlist='74'  channelid='1' }
+		    <a href="[field:arcurl/]" target=_blank><img src="[field:litpic/]" style="width:966px;height:263px"></a>
+	    {/dede:arclist}
+    </div>
+
+    
+    
+   <div style="text-align:center"><img src="{dede:global.cfg_templets_skin/}/images/xw.jpg"></div>
+      <div style="margin:0 auto;height:79px;width:966px;background:url({dede:global.cfg_templets_skin/}/images/tsxl.jpg)">
+		<table border="0" width="966" id="table1" height="79" cellspacing="0" cellpadding="0">
+			<tr>
+				<td width="539">&nbsp;</td>
+				<td width="353">
+				
+	     <div id="Tab5" style="margin-top:10px;margin-bottom:10px">
+	     	 <div class="Menubox5">
+									<ul>
+										<li id="jobc1" onmouseover="setTab2('jobc',1,4)"  class="hover">游艇会</li>
+										<li id="jobc2" onmouseover="setTab2('jobc',2,4)" >薰衣草庄园</li>
+										<li id="jobc3" onmouseover="setTab2('jobc',3,4)" >跑马场</li>
+										<li id="jobc4" onmouseover="setTab2('jobc',4,4)" >主题海景基地</li>
+									</ul>
+		     </div>
+		 </div>
+				
+				</td>
+				<td width="74"><a href="/tese" style="display:block;width:70px;height:78px;"></a></td>
+			</tr>
+		</table>
+</div>
+   <div style="margin:0 auto;width:966px;height:375px">
+   
+		<div id="con_jobc_1" class="hover" >
+			  	
+			  	<ul style="list-style:none">
+					{dede:arclist row=4 titlelen=30  typeid=52 channelid='1' }
+						<li style="float:left;margin-left:6px;margin-right:6px">
+						<div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'">
+							<a href="[field:arcurl/]" ><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"  class="imgss" /></a>
+							<div class="btss">
+							   <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>[field:pubdate function='strftime("%Y/%m/%d",@me)'/]</div>
+							   <div style="margin-top:5px"><a href="[field:arcurl/]" >[field:title/]</a></div>
+							</div>
+                             <div class="lss">[field:title/]</div>
+						</div>
+						
+                         
+						</li>
+					{/dede:arclist}
+              </ul>
+
+	    </div>
+	    
+	    <div id="con_jobc_2"  style="display:none">
+			  	<ul>
+					{dede:arclist row=4 titlelen=30  typeid=53 channelid='1' }
+						<li style="float:left;margin-left:6px;margin-right:6px">
+						<div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'">
+							<a href="[field:arcurl/]" ><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"  class="imgss" /></a>
+							<div class="btss">
+							   <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>[field:pubdate function='strftime("%Y/%m/%d",@me)'/]</div>
+							   <div style="margin-top:5px"><a href="[field:arcurl/]" >[field:title/]</a></div>
+							</div>
+                             <div class="lss">[field:title/]</div>
+						</div>
+						
+                         
+						</li>
+					{/dede:arclist}
+              </ul>
+	    </div>
+
+	    <div id="con_jobc_3"  style="display:none">
+			  	<ul>
+					{dede:arclist row=4 titlelen=30  typeid=54 channelid='1' }
+						<li style="float:left;margin-left:6px;margin-right:6px">
+						<div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'">
+							<a href="[field:arcurl/]" ><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"  class="imgss" /></a>
+							<div class="btss">
+							   <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>[field:pubdate function='strftime("%Y/%m/%d",@me)'/]</div>
+							   <div style="margin-top:5px"><a href="[field:arcurl/]" >[field:title/]</a></div>
+							</div>
+                             <div class="lss">[field:title/]</div>
+						</div>
+						
+                         
+						</li>
+					{/dede:arclist}
+              </ul>
+	    </div>
+
+
+	    <div id="con_jobc_4"  style="display:none">
+			  	<ul>
+					{dede:arclist row=4 titlelen=30  typeid=55 channelid='1' }
+						<li style="float:left;margin-left:6px;margin-right:6px">
+						<div class='nppts' onmouseover="this.className='nppts2'"  onmouseout="this.className='nppts'">
+							<a href="[field:arcurl/]" ><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"  class="imgss" /></a>
+							<div class="btss">
+							   <div style="color:#ffffff;font-size:10px;height:11px;line-height:11px">Date: </b>[field:pubdate function='strftime("%Y/%m/%d",@me)'/]</div>
+							   <div style="margin-top:5px"><a href="[field:arcurl/]" >[field:title/]</a></div>
+							</div>
+                             <div class="lss">[field:title/]</div>
+						</div>
+						
+                         
+						</li>
+					{/dede:arclist}
+              </ul>
+	    </div>
+
+   </div>   
+    
+    
+   <div style="text-align:center"><img src="{dede:global.cfg_templets_skin/}/images/xw.jpg"></div>
+
+       
+    <div style="text-align:center"><map name="FPMap1">
+		<area href="/works/xrfx" shape="rect" coords="901, 29, 965, 59">
+		</map><img src="{dede:global.cfg_templets_skin/}/images/xrfx.jpg" usemap="#FPMap1" ></div>
+
+   <div style="margin:0 auto;width:966px;height:247px">
+			  <ul>
+					{dede:arclist row=4 titlelen=30  typeid=45 channelid='2' }
+						<li style="float:left;margin-left:6px;margin-right:6px">
+						<div class='nppxrfx' onmouseover="this.className='nppxrfx2'"  onmouseout="this.className='nppxrfx'">
+							<a href="[field:arcurl/]" ><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"  class="imgss" /></a>
+							<div class="btss">
+								<a href="[field:arcurl/]" >[field:title/]</a><br>
+								<span style="color:#666666"><b>POST TIME : </b>[field:pubdate function='strftime("%Y/%m/%d",@me)'/]</span>
+							</div>
+
+						</div>
+						
+                         
+						</li>
+					{/dede:arclist}
+              </ul>
+   </div>   
+    <div style="text-align:center"><img src="{dede:global.cfg_templets_skin/}/images/xw.jpg"></div>
+
+    <div style="text-align:center">
+	    {dede:arclist idlist='75'  channelid='1' }
+		    <a href="[field:arcurl/]" target=_blank><img src="[field:litpic/]" style="width:966px;height:263px"></a>
+	    {/dede:arclist}
+    </div>
+    
+    <div style="text-align:center"><map name="FPMap44">
+		<area href="/jingdian/" shape="rect" coords="887, 37, 965, 68">
+		</map><img src="{dede:global.cfg_templets_skin/}/images/wjd.jpg" usemap="#FPMap44"></div>
+
+   <div style="margin:0 auto;width:966px;height:227px">
+
+  			  <ul>
+					{dede:arclist row=3 titlelen=30  typeid=36 channelid='1' }
+						<li style="float:left;margin-left:5px;margin-right:5px">
+						<div class='nppiijd' onmouseover="this.className='nppiijd2'"  onmouseout="this.className='nppiijd'">
+							<a href="[field:arcurl/]" ><img src="[field:litpic/]"  alt="[field:title/]" title="[field:title/]"  style="width:298px;height:185px;padding:5px;border:1px solid #efefef" /></a>
+						  <div class="btss"><a href="[field:arcurl/]" >[field:title/]</a></div>
+						</div>
+						
+						<div style="color:#888888"><b>POST TIME : </b>[field:pubdate function='strftime("%Y/%m/%d",@me)'/]</div>
+                         
+						</li>
+					{/dede:arclist}
+              </ul>
+   </div>   
+    
+    
+    
+<div style="text-align:center"><img src="{dede:global.cfg_templets_skin/}/images/xw.jpg"></div>
+
+<div align="center">
+
+<table border="0" width="966" cellspacing="0" cellpadding="0" height="231">
+	<tr>
+		<td width="329" valign="top" style="border-right:1px solid #dddddd;padding-right:10px">
+		   <div><a href="/tieshi"><img src="{dede:global.cfg_templets_skin/}/images/tieshi.jpg"></a></div>
+		   <div>
+		   <ul>
+		   	{dede:arclist row='5' titlelen='66'  typeid='46' channelid='1'  }
+              <li style="padding-left:10px;height:30px;line-height:30px;border-bottom:1px solid #dddddd;text-align:left"><a href="[field:arcurl/]" >•&nbsp;&nbsp; [field:title/]</a></li>
+		    {/dede:arclist}
+		   </ul>
+		   </div>
+		</td>
+		<td width="330" valign="top" style="padding-left:10px">
+		<div><a href="/xuzhi"><img src="{dede:global.cfg_templets_skin/}/images/xuzhi.jpg"></a></div>
+		   <div>
+		   <ul>
+		   	{dede:arclist row='5' titlelen='66'  typeid='47' channelid='1'  }
+              <li style="padding-left:10px;height:30px;line-height:30px;border-bottom:1px solid #dddddd;text-align:left"><a href="[field:arcurl/]" >•&nbsp;&nbsp; [field:title/]</a></li>
+		    {/dede:arclist}
+		   </ul>
+		   </div>
+
+
+		</td>
+		<td width="300" valign="top">
+		<iframe width="300" height="231" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=231&fansRow=2&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=0&uid={dede:global name='weibouid'/}&verifier={dede:global name='weibosec'/}&dpc=1"></iframe>
+		</td>
+	</tr>
+</table>
+</div>
+<div style="text-align:center"><a href="/service/lc/"><img src="{dede:global.cfg_templets_skin/}/images/lc.jpg"></a></div>
+
+{dede:include filename="end.html"/} 
+
+</body>
+</html>

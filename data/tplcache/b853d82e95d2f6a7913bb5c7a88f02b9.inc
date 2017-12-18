@@ -1,0 +1,1 @@
+<li style="padding-left:10px;height:30px;line-height:30px;border-bottom:1px solid #dddddd;text-align:left"><a href="[field:arcurl/]" target="_blank">•&nbsp;&nbsp; [field:title/]</a></li>

@@ -1,0 +1,12 @@
+{dede:pagestyle maxwidth='800' pagepicnum='9999' ddmaxwidth='200' row='3' col='4' value='1'/}
+{dede:img ddimg='/uploads/allimg/130414/1-130414132422.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414132422.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414132428.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414132428.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414132429.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414132429.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414132439.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414132439.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414132442.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414132442.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414132446.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414132446.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414132447.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414132447.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414132449.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414132449.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414132451.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414132451.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414132453.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414132453.jpg {/dede:img}
+{dede:img ddimg='/uploads/allimg/130414/1-130414132458.jpg' text='' width='651' height='500'} /uploads/allimg/130414/1-130414132458.jpg {/dede:img}
